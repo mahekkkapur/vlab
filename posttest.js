@@ -1,5 +1,5 @@
 function result() {
-    if (document.getElementById('q12').checked) {
+    if (document.getElementById('q13').checked) {
         document.getElementById('q1c').innerHTML = "correct";
     } else {
         document.getElementById('q1w').innerHTML = "wrong ans, the correct option is B ";

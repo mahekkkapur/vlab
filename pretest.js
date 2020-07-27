@@ -24,11 +24,11 @@ function result1() {
         document.getElementById('q3p').innerHTML = "wrong ans, the correct option is B ";
         document.getElementById('q3p').style.color="red"
     }
-    if (document.getElementById('q13').checked) {
+    if (document.getElementById('q14').checked) {
         document.getElementById('q4p').innerHTML = "correct";
         document.getElementById('q4p').style.color="green"
     } else {
-        document.getElementById('q4p').innerHTML = "wrong ans, the correct option is A ";
+        document.getElementById('q4p').innerHTML = "wrong ans, the correct option is B ";
         document.getElementById('q4p').style.color="red"
     }
     if (document.getElementById('q18').checked) {

@@ -100,7 +100,7 @@
                     </li>
 
                     <li class="treeview">
-                        <a href="procedure.html">
+                        <a href="procedure2.html">
                             <i class="fa fa-files-o"></i> <span>Procedure</span>
                         </a>
                     </li>
@@ -158,26 +158,10 @@
                     <p></p>
                     Flow Control is a set of procedures for the Data Link Layer that controls the flow of data between the sender and the receiver. It allows two stations working at different speeds to communicate with each other. It is a set of measures taken to regulate
                     the data that the Sender sends to receiver , so that no problem is faced if the Sender sends data at higher rate and receiver is too slow to support that data rate.To solve the above problem , FLOW CONTROL is introduced in Data Link
-                    Layer. It tells the sender how much data should be sent to the receiver so that the data is not lost.The main concept of Flow Control is to introduce EFFICIENCY in Computer Networks.To help in it , the three protocols designed are
-                    :-
+                    Layer. It tells the sender how much data should be sent to the receiver so that the data is not lost.The main concept of Flow Control is to introduce EFFICIENCY in Computer Networks.
                     <p></p>
-                    <ul><strong>
-                        <li >Stop-and-Wait Protocol</li>
-                        <li>Go Back N Protocol (Under Sliding Window Protocol)</li>
-                        <li>Selective Repeat Protocol (Under Sliding Window Protocol) </li>
-                    </strong>
-                    </ul>
                     <p></p>
                     <p> </p>
-                    <h4>Stop and Wait</h4>
-                    <p>It is a special case of the general sliding window protocol with transmit and receive window sizes equal to one in both cases. This protocol involves the following transitions −</p>
-                    <ul>
-                        <li>The sender sends one frame at a time and waits for the acknowledgment.
-                        </li>
-                        <li>Once the receiver receives a valid frame, it sends an acknowledgment frame back to the sender.</li>
-                        <li>On receiving the acknowledgment frame, the sender understands that the receiver is ready to accept the next frame. So it sender the next frame in queue.</li>
-                        <li>If the ACK does not reach the sender before a certain time, known as the timeout, the sender sends the same frame again.The timeout countdown is reset after each frame transmission.</li>
-                    </ul>
                     <br>
                     <h4>Go Back N Protocol </h4>
                     <p>
@@ -194,26 +178,7 @@
                         <li>If the ACK does not reach the sender before a certain time, known as the timeout, the sender sends N frames, from the frame for which the acknowledgement is lost. The timeout countdown is reset after each frame transmission.
                         </li>
                     </ul>
-                    <br>
-                    <h4>Selective Repeat Protocol
-                    </h4>
-                    <p>
-                        Selective Repeat is part of the automatic repeat request (ARQ). With selective repeat, the sender sends a number of frames specified by a window size even without the need to wait for individual ACK from the receiver as in Go-Back-N ARQ. The receiver
-                        accepts out-of-order frames and buffers them. The sender individually retransmits frames that have timed out. This protocol involves the following transitions −
-
-                    </p>
-                    <ul>
-
-                        <li>A sender can send multiple frames as allowed by the window size.
-                        </li>
-                        <li>The receiver sends the acknowledgement for each frame.</li>
-                        <li>If the acknowledgement for a particular frame is not received, then the sender resends that frame again without disturbing the flow of others.</li>
-                        <li>The receiver side, if the frame received is corrupted, then the receiver can send a negative acknowledgement.
-                        </li>
-                        <li>When negative acknowledgement is received by the sender, then that particular frame is re-sent similarly.</li>
-
-                    </ul>
-                </div>
+                                   </div>
             </section>
             <!-- /.content -->
         </div>
