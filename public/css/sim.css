@@ -1,262 +1,84 @@
 /*Stop and Wait Css  */
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1536px) {
     body {
-        width: 420px;
+       width: 100%;
+       height: 100%;
     }
 }
 
-.array {
-    display: flex;
-    height: 20%;
-    margin-left: 10%;
-    margin-top: 4%;
-}
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 70%;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 
-.dropdown:hover {
-    display: block;
-}
-
-#b1 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b1:hover {
-    background-color: lighten(yellow, 30%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b2 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b2:hover {
-    background-color: lighten(orange, 10%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b3 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b3:hover {
-    background-color: lighten(orange, 10%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b4 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b4:hover {
-    background-color: lighten(orange, 10%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b5 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b5:hover {
-    background-color: lighten(orange, 10%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b6 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b6:hover {
-    background-color: lighten(yellow, 30%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b7 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b7:hover {
-    background-color: lighten(yellow, 30%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b8 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b8:hover {
-    background-color: lighten(yellow, 30%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b9 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b9:hover {
-    background-color: lighten(yellow, 30%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-#b10 {
-    background-color: yellow;
-    color: blue;
-}
-
-#b10:hover {
-    background-color: lighten(yellow, 30%);
-    cursor: pointer;
-    cursor: hand;
-}
-
-.c1 {
-    display: flex;
-}
-
-.start {
-    margin-top: 20%;
-}
-
-.vl {
-    border-left: 3px solid green;
-    height: 500px;
-    margin-left: 194%;
-}
-
-.v2 {
-    border-left: 3px solid green;
-    height: 500px;
-    flex: 33.3%;
-    margin-left: 40%;
-}
-
-.v4 {
-    border-left: 3px solid rgb(128, 41, 0);
-    height: 235px;
-    margin-left: 20%;
-    margin-top: 1%;
-    transform: rotate(135deg);
-}
-
-.path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear alternate infinite;
-}
-
-@keyframes dash {
-    0% {
-        stroke-dashoffset: 1000;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-.v5 {
-    border-left: 3px solid rgb(245, 230, 23);
-    height: 235px;
-    margin-top: 41%;
-    transform: rotate(-134deg);
-}
-
-#myAnimation {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-color: red;
-    border-radius: 2%;
-    border: 1%;
-}
-
-#myAnimation1 {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-color: yellow;
-    border-radius: 2%;
-    border: 1%;
-}
-
-#container {
-    width: 220px;
+    #topcorner {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #2C99CE ;
     
-    height: 500px;
-    position: relative;
-    background: yellow;
-    margin-left: 250%;
-    border-left: green solid 9px;
-    border-right: green solid 9px;
+    }
+    #topcorner:hover , .right:hover{
+        color: #77BB41;
+    }
+    
+    
+    
+    
+    
+    
+        li{
+            list-style-type:upper-roman;
+        }
+        #btn{
+            position: absolute;
+        top: 15%;
+        right: 6%; 
+        background: white !important;
+        color: #2C99CE;
+        border: 1px solid black;
+        
+        }
+        #btn:hover{
+            color: #77BB41;
+        }
+        .block{
+            display: none;
+        }
+        
+canvas {
+    
+    margin-left: 0.5rem;
+    
+ margin-bottom: 5rem;
+    padding:5%;
+    border: 1px solid black;
 }
 
-#animate {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-color: red;
+.header-line{
+    margin-top: 0.5rem;
+    background:  #ff6600;
+    border: 4px solid  #ff6600;
+    width:100%;
+    
+}
+.title{
+    margin: 1rem;
+    text-align: center;
+    color:  #2C99CE;
+}
+.footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
-
-/*stop and wait css end here  */
-
-
-/* gobackarq css start here */
-
+a{
+    text-decoration: none !important;
+    color: #2C99CE;
+}
+a:hover{
+    color: #77BB41 !important;
+}

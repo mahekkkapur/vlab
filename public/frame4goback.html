@@ -21,99 +21,8 @@
     })
 </script>
 
-<style>
-   
-    
-    #topcorner {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-    
-    .right {
-        position: absolute;
-        top: 30%;
-        right: 6%;
-        font-weight: normal;
-        font-size: 1rem;
-        box-shadow: 8px 8px 5px grey;
-        border: 0.3rem outset rgb(188, 191, 194);
-    }
-    
-        li{
-            list-style-type:upper-roman;
-        }
-        #btn{
-            position: absolute;
-        top: 12.5%;
-        right: 6%; 
-        }
-        .block{
-            display: none;
-        }
-        .sidebar{
-  position: fixed;
-  transform: translateX(-30rem);
-  width: 30.4rem;
-  background-color: #f0f0f0;
-  height: 100%;
-  margin-right: 1%;
-}
-.sidebar.open{
-  transform: translateX(182.5%);
-}
-.sidebar-close-button{
-  
- width: 2rem;
- height: 2.2rem;
-  
-  
-  font-size: 1.5rem;
- 
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  right: 5%;
-  top: 0%;
-  
-}
-canvas {
-    
-    margin-left: 4%;
-    
- margin-bottom: 40%;
-    padding:5%;
-    border: 1px solid black;
-}
-
-.header-line{
-    margin-top: 2%;
-    background:  #ff6600;
-    border: 4px solid  #ff6600;
-    width:362%;
-    height: 10%;
-}
-.title{
-    text-align: right;
-}
-.footer{
-    position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-#fs{
-    left: 580%;
-    top: 50%;
-}
-
-</style>
 
 <body>
-    <p class="right"></p>
     <div>
         <img src="http://ems-iitr.vlabs.ac.in/electrical-machines-(simulation)/exp/speed-control-slip-ring/assets/images/logo-new.png" alt="Vlabimg">
             </div>
@@ -123,24 +32,21 @@ canvas {
            <div class="header-line">
            </div>
            <div class="title">
-            <h3>Stop and Protocol</h3>
+            <a href="../public/Go_Back.html">
+            <h3>Go-Back-N-ARQ</h3></a>
            </div>
            
            
 
     <!-- Example single danger button -->
-    <div id="align" class="btn-group">
-        <button type="button" id="fs" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Frame Size
-    </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="frame3goback.html">3</a>
-            <a class="dropdown-item" href="#">4</a>
-            <a class="dropdown-item" href="frame5goback.html">5</a>
+    
+    <div  class="card" style="width: 18rem; float: right; margin: 4rem;">
+                <div class="card-body">
 
-        </div>
-    </div>
-   
+                    <p class="right"></p>
+
+                </div>
+              </div>  
 
   
    <div></div>
@@ -155,7 +61,7 @@ canvas {
 
 
     
-    <script src="./js/sketch1.js"></script>
+    <script src="./js/sketch4.js"></script>
 
     <script>
         function openMenu() {
