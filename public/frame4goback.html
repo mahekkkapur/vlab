@@ -49,13 +49,12 @@
               </div>  
 
   
-   <div></div>
-   <div id="btn" class="dropdown">
-        <button style="background: white; color: #2C99CE ;" class="btn btn-success">Instruction</button>
-        <div class="dropdown-content">
-            <p style="color: #77BB41;">Procedure for Go-Back-N ARQ</p>
+              <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <p style="color: #ffffff;">Procedure for Go-Back-N ARQ</p>
                     
-            <ol style="color: #77BB41;">
+            <ol style="color: #ffffff;">
                 
                 <li>The aim is to introduce the students to the working of the Go-back-N ARQ and how it behaves under the situations such as frame lost or Acknowledgement Lost.</li>
                 <li>Once one selects the Go-Back-N ARQ, then they are required to choose the frame size for which the simulation is desired.</li>
@@ -65,9 +64,9 @@
                 <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
                 <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
             </ol>
-                </div>
-       
         </div>
+      </div>
+      <button id="btn" onclick="openNav()"  class="btn btn-primary">Instruction</button>
     <div class="footer">
         <P>Copyrights Virtual lab IIT Roorkee</P>
     </div>
@@ -77,13 +76,14 @@
     <script src="./js/sketch4.js"></script>
 
     <script>
-        function openMenu() {
-     document.querySelector(".sidebar").classList.add("open");
-   }
-   function closeMenu() {
-     document.querySelector(".sidebar").classList.remove("open")
-   }
-   </script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
